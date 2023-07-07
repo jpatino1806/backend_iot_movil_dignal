@@ -1,0 +1,42 @@
+{
+  "name": "iot-dignal-api",
+  "version": "1.0.0",
+  "description": "API template course IoT by Dignal",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --legacy-watch"
+  },
+  "keywords": [
+    "api",
+    "iot",
+    "javascript",
+    "node"
+  ],
+  "author": "Roger Burgos",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mqtt": "^4.3.7",
+    "mysql2": "^2.3.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^6.6.5",
+    "socket.io": "^4.5.3",
+    "validatorjs": "^3.22.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-header": "^3.1.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "nodemon": "^2.0.12",
+    "sequelize-cli": "^6.2.0"
+  }
+}

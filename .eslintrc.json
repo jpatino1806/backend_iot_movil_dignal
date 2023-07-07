@@ -1,0 +1,114 @@
+{
+  "env": {
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "plugins": [
+    "header"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "yoda": [
+      "error",
+      "always"
+    ],
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "no-var": [
+      "error"
+    ],
+    "strict": [
+      "error",
+      "global"
+    ],
+    "prefer-template": [
+      "error"
+    ],
+    "block-spacing": [
+      "error",
+      "always"
+    ],
+    "no-cond-assign": [
+      "error",
+      "always"
+    ],
+    "camelcase": [
+      "error",
+      {
+        "properties": "never"
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 80
+      }
+    ],
+    "key-spacing": "error",
+    "no-irregular-whitespace": "error",
+    "no-trailing-spaces": "error",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "no-constant-condition": "error",
+    "header/header": [
+      2,
+      "block",
+      [
+        "*",
+        " * Created by Dignal® for educational purposes. All rights reserved.",
+        " "
+      ],
+      2
+    ]
+  },
+  "globals": {
+    "__basedir": true,
+    "functions": true
+  },
+  "ignorePatterns": [
+    "/node_modules/*"
+  ]
+}

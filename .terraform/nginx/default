@@ -1,0 +1,10 @@
+server {
+    listen         6872;
+    server_name    _;
+    root           /home/username/iot/frontend/dist;
+    index          index.html;
+
+    location / {
+        try_files  $uri $uri/ /index.html;
+    }
+}

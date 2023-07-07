@@ -1,0 +1,43 @@
+name: dignal_iot_backend
+services:
+  node:
+    image: dignal-iot-api
+    build:
+      context: ../.
+      dockerfile: .docker/node/Dockerfile
+    volumes:
+      - ../:/var/www/html/dignal
+    user: 1000:1000
+    env_file:
+      - ./.env
+    ports:
+      - ${PORT}:${PORT}
+      - ${WEBSOCKET_PORT}:${WEBSOCKET_PORT}
+    networks:
+      - dignal
+  mqtt:
+    image: emqx/emqx:5.0.9-amd64-alpine
+    env_file:
+      - ./.env
+    ports:
+      - 1883:1883
+      - 18083:18083
+    hostname: ${MQTT_HOST}
+    networks:
+      - dignal
+  database:
+    image: mysql:8.0.30
+    env_file:
+      - ./.env
+    ports:
+      - 3306:3306
+    networks:
+      - dignal
+    hostname: ${MYSQL_HOST}
+    volumes:
+      - dbdata:/var/lib/mysql
+networks:
+  dignal:
+    driver: bridge
+volumes:
+  dbdata:

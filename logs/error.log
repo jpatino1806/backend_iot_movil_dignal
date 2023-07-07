@@ -1,0 +1,7 @@
+{"level":"error"}
+{"message":"jwt is not defined","level":"error"}
+{"message":"Sun Aug 22 2021 00:12:41 GMT-0500 (hora de verano central) jwt is not defined","level":"error"}
+{"message":"Sun Aug 22 2021 00:14:09 GMT-0500 (hora de verano central) jwt is not defined","level":"error"}
+{"message":"Sun Aug 22 2021 00:17:00 GMT-0500 (hora de verano central) Lock wait timeout exceeded; try restarting transaction","level":"error"}
+{"message":"Sun Aug 22 2021 12:28:06 GMT-0500 (hora de verano central) Lock wait timeout exceeded; try restarting transaction","level":"error"}
+{"message":"Sun Aug 22 2021 15:22:17 GMT-0500 (hora de verano central) Cannot read property 'id' of undefined","level":"error"}
